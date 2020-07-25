@@ -1,0 +1,22 @@
+.companies {
+    width: 90%;
+    height: 100vh;
+    position: relative;
+    left: 5%;
+}
+
+@media (max-width: 1024px) {
+    .companies {
+        height: 93%;
+    }
+}
+
+@media (max-width: 600px) {
+    .companies {
+        overflow-y: scroll;
+        z-index: 0;
+        height: 88vh;
+        width: 97%;
+        left: 0%;
+    }
+}

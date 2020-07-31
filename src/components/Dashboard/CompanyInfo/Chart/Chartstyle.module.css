@@ -1,0 +1,35 @@
+.daily_chart {
+
+    background-color: #2e2f37;
+    /* background-color: red; */
+    border-radius: 5px;
+    
+    color: #fff;
+    width: 90%;
+    height: 70vh;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+    overflow: hidden;
+
+    position: relative;
+    left: 5%;
+    top: 5%;
+    padding-top: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .daily_chart {
+        height: 50vh;
+        top: 10%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .daily_chart {
+        height: 60vh;
+    }
+}

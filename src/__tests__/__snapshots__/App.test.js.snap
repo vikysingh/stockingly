@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My first snapshot text testing app 1`] = `
+<div
+  className="App"
+>
+  <header
+    className="header"
+    role="banner"
+  >
+    <h1>
+      Top 15 stocks
+    </h1>
+    <button
+      className="primary_btn"
+    >
+      <a
+        href="/stocks"
+        onClick={[Function]}
+      >
+        Access stocks!
+      </a>
+    </button>
+  </header>
+</div>
+`;

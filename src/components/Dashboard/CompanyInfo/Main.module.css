@@ -1,0 +1,36 @@
+.company_info_main {
+    width: 100%;
+    height:100vh;
+
+    display: grid;
+    grid-template-rows: 60px auto;
+
+    /* background-color: red; */
+    overflow-y: scroll;
+    padding-bottom: 5vh;
+}
+
+.company_info_main > div {
+    grid-row: 1 / 2;
+    height: 100%;
+}
+
+.company_info_main > section {
+    grid-row: 2 / -1;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 5vh;
+    padding-top: 0;
+}
+
+@media (max-width: 1024px) {
+    .company_info_main {
+        width: 100%;
+        grid-template-rows: 8vh auto;
+    }
+
+    .company_info_main > section {
+        padding-bottom: 20vh;
+    }
+}

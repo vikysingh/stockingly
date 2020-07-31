@@ -1,0 +1,25 @@
+.heading_button {
+    width: calc(100% / 3);
+    height: 100%;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    background-color: unset;
+    color: #fff;
+}
+
+.active_heading_button {
+    background-color: #3430FF;
+}
+
+@media (max-width: 1024px) {
+    .heading_button {
+        font-size: 1.4rem !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .heading_button {
+        font-size: 0.8rem !important;
+    }
+}

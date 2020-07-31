@@ -1,0 +1,34 @@
+.header {
+    width: 100vw;
+    height: 96vh;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header > h1 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+
+.primary_btn {
+    background-color: dodgerblue;
+    border: none;
+    font-weight: lighter;
+    width: auto;
+    height: auto;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    border-radius: 5px;
+}
+
+.primary_btn > a {
+    color: #fff;
+}

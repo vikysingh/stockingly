@@ -2,4 +2,13 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        height: unset;
+        padding-bottom: 5vh;
+        /* background-color: red; */
+    }
 }

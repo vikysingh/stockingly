@@ -12,7 +12,25 @@
 
 .company_info_main > div {
     grid-row: 1 / 2;
+
+    width: 90%;
     height: 100%;
+
+    padding: 0 5%;
+
+    margin-top: 0px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.go_back_icon {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: #fff;
+    cursor: pointer;
 }
 
 .company_info_main > section {

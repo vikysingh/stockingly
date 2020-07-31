@@ -16,7 +16,7 @@ export default function Dashboard() {
             <main className={styles.dashboard}>
             
             {
-                MainView === "companies" ? <Gallery /> : <Main />
+                MainView === "gallery" ? <Gallery /> : <Main />
             } 
             </main>
         </Suspense>

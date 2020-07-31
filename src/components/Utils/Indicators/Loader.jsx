@@ -7,10 +7,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 width: 100vw;
-height: 100vh;
+height: calc(100vh - 70px);
 background: unset;
 position: absolute;
-top: 0;
+top: 70px;
 left: 0;
 `
 

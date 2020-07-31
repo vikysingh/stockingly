@@ -1,33 +1,15 @@
 import React from 'react'
 
-// import LayoutSetter from '../LayoutSetter/LayoutSetter'
 import styles from "./Overview.module.css"
 
-import Indicator from "../../../Utils/Indicators/Loader"
 
 function Overview(props) {
-    const { loading, data, error } = props
-    console.log(props)
-    
-    function loadingErrorChecker() {
-        if(loading && !error && !data.Note) {
-            return "loading"
-        }
-        else if(error || data.Note) {
-            return "error"
-        }
-    }
+    const { data } = props
 
     return (
         <div className={styles.overview} >
             {
-                loadingErrorChecker() === "loading" && <Indicator theme="primary" text="Loading..." />
-            }
-            {
-                loadingErrorChecker() === "error" && <Indicator theme="danger" text="Something went wrong :(" />
-            }
-            {
-                data && data.Name !== undefined && <>
+                data && <>
                 <h1 className={styles.title} >Company Overview</h1>
                 <h3 className={styles.heading_label} > Name - <span> {data.Name} </span> </h3>
                 <h3 className={styles.heading_label} > Symbol - <span> {data.Symbol} </span> </h3>

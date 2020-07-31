@@ -6,14 +6,15 @@ import Chart from "./Chart"
  
 function Daily(props) {
     const { data } = props
-    const [ renderedData, setRenderedData ] = useState([{ name: "", open: "", high: "", low: "", close: "" }])
+    const [ renderedData, setRenderedData ] = useState([{ name: "", open: "",
+    high: "", low: "", close: "" }])
 
     useEffect(() => {
-        getData()
+        mapDataToState()
         return () => null
     }, [data])
 
-   async function getData() {
+   async function mapDataToState() {
        
        if(data) {
             let finalData = data["Time Series (Daily)"]

@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 
+import { BsChevronLeft } from "react-icons/bs"
+
 import styles from "./Main.module.css"
 import ViewContext from "../../../context"
 
@@ -27,11 +29,14 @@ const ViewManager = {
 }
 
 function Main() {
-    const { typeView } = useContext(ViewContext)
+    const { typeView, setMainView } = useContext(ViewContext)
     
     return (
         <main className={styles.company_info_main} >
             <div>
+                <BsChevronLeft className={styles.go_back_icon}
+                onClick={() => setMainView("gallery")}
+                />
                 <Heading />
             </div>
             <section>

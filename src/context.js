@@ -1,9 +1,9 @@
 import React, { useState, createContext } from "react"
 
-const ViewContext = createContext("Companies")
+const ViewContext = createContext("gallery")
 
 export function ViewContextProvider(props) {
-    const [ MainView, setMainView ] = useState("companies")
+    const [ MainView, setMainView ] = useState("gallery")
     const [ typeView, setTypeView ] = useState("overview")
     const [ viewCompany, setCompanyView ] = useState("AAPL")
 

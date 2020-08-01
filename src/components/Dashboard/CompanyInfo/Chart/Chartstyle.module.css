@@ -1,12 +1,11 @@
 .daily_chart {
 
     background-color: #2e2f37;
-    /* background-color: red; */
     border-radius: 5px;
     
     color: #fff;
     width: 90%;
-    height: 70vh;
+    height: 100vh;
     padding-bottom: 5vh;
     margin-bottom: 5vh;
     overflow: hidden;
@@ -15,6 +14,56 @@
     left: 5%;
     top: 5%;
     padding-top: 5%;
+
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100%;
+}
+
+.gradient_card_container {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gradient_card_container > div {
+    border-radius: 5px;
+    width: 90%;
+    height: 23%;
+}
+
+.gradient_card_container > div > span:first-child  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: 30%;
+    width: 90%;
+    padding: 0 5%;
+}
+
+.gradient_card_container > div > span:last-child {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chart_container {
+    grid-column: 2 / -1;
+    grid-row: 1 / -1;
+    width: 90%;
+    height: 90%;
+    
+    margin-left: 5%;
 
     display: flex;
     justify-content: center;
@@ -28,8 +77,48 @@
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
     .daily_chart {
-        height: 60vh;
+        grid-template-columns: 35% 65%;
+    }
+    
+    .gradient_card_container > div > span:last-child {
+        font-size: 1.3rem;
+    }
+
+    .gradient_card_container > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .daily_chart {
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        height: 160vh;
+        top: 0;
+        grid-row-gap: 20px;
+    }
+
+    .gradient_card_container {
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+        height: 100%;
+    }
+
+    .gradient_card_container > div {
+        width: 100%;
+        padding-top: 10px;
+        /* height: 30%; */
+    }
+
+    .gradient_card_container > div > span:last-child {
+        font-size: 1.3rem;
+    }
+
+    .chart_container {
+        grid-column: 1 / -1;
+        grid-row: 2 / -1;
+        /* height: 40%; */
     }
 }

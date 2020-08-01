@@ -1,7 +1,7 @@
 import React from "react"
 
 import {
-  AreaChart, Area, XAxis, ResponsiveContainer, Tooltip, Legend, Line
+  AreaChart, Area, XAxis, ResponsiveContainer, Tooltip, Legend
 } from 'recharts'
 
 import PropTypes from 'prop-types'
@@ -10,7 +10,7 @@ function Chart(props) {
     const { data, params } = props.data
     
    return (
-       <ResponsiveContainer width="90%" height="100%">
+       <ResponsiveContainer width="100%" height="90%">
             <AreaChart
                 data={data}
                 margin={{

@@ -2,7 +2,6 @@ import React from 'react'
 
 import styles from "./Overview.module.css"
 
-
 function Overview(props) {
     const { data } = props
 

@@ -9,15 +9,6 @@ function Heading() {
     const { setTypeView } = useContext(ViewContext)
 
     function handleActiveClass(event) {
-        // IDs.map(btn => {
-        //     document.getElementById(btn).classList.remove("active_heading_button")
-        //     if(btn === event.target.id) {
-        //         console.log("class added")
-        //         console.log(document.getElementById(event.target.id).classList)
-        //         document.getElementById(event.target.id).classList.add("active_heading_button")
-        //     }
-        // })
-
         if(event.target.id === "overview_1") setTypeView("overview")
         else if(event.target.id === "stock_performance_2") setTypeView("chart")
         else setTypeView("balancesheet")
